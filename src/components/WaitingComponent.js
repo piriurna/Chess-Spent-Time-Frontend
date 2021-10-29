@@ -3,7 +3,7 @@ import loading from '../loading.gif';
 function WaitingPage(){
     return(
         <div id="root">
-            <img src = {loading}/>
+            <img className="loading-gif" src = {loading}/>
             <span className="firstTitle">This may take several minutes...</span>
             <span className="firstTitle">If you’d like we can e-mail you the result</span>
             <div className="input-field">

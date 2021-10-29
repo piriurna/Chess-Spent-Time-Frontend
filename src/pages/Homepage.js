@@ -7,7 +7,7 @@ import axios from 'axios'
 
 function Homepage(){
     const [inputValue, setText ] = useState('')
-    const [ loading, setLoading ] = useState(false)
+    const [ loading, setLoading ] = useState(true)
     let history = useHistory()
 
     const submitHandler = (e)=>{
@@ -18,7 +18,7 @@ function Homepage(){
                 pathname: '/completed',
                 state: response.data
             })
-            setLoading(false)
+            setLoading(true)
         }
         ).catch(err =>{
             setLoading(false)
