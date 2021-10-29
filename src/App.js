@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Homepage  from './pages/Homepage';
+import CompletedPage from './pages/CompletedPage';
+import { Route, Switch } from 'react-router-dom'
+
+// const submitHandler = (e)=>{
+//       // axios.get("http://localhost:8000/chesscom/francozalamena")
+//       console.log("clicked")
+// }
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  return(
+    <div>
+      <Route path="/" exact={true}>
+        <Homepage/>
+      </Route>
+      <Route path="/completed">
+        <CompletedPage/>
+      </Route>
     </div>
-  );
+  )
 }
 
 export default App;
