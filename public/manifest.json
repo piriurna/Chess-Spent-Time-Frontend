@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "description":"Website created for chess.com players that want to know how many hours they have spent in the game. The hours are accounted with all your matches alone, not counting puzzles, idle time, etc.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,7 +19,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://chess-spent-time.herokuapp.com",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#95bb4a",
   "background_color": "#1f1d1b"
